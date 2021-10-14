@@ -1,0 +1,107 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    background: url('/assets/wallpaper.png') repeat;
+    background-color: rgb(36, 36, 36);
+}
+
+p{
+    color: white;
+}
+
+.heading{
+    text-align: center;
+    color: white;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-start{
+    width: 200px;
+    height: 75px;
+    border-radius: 5%;
+    font-size: 24px;
+}
+
+.loader{
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 45%;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid rgb(0, 0, 0, 0);
+    border-bottom: 16px solid rgba(0, 0, 0, 0);
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.choice{
+    display: inline-grid;
+    padding-left: 3%;
+    color: white;
+}
+
+.score{
+    display: inline-grid;
+    padding-left: 70%;
+    color: white;
+}
+
+.dice{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.keys{
+    display: grid;
+    padding-left: 3%;
+    padding-top: 5%;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 30px 30px;
+}
+
+.key{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+}
+
+.message{
+    color: white;
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+    font-size: 36px;
+}
+
+.answer{
+    color: white;
+}
+
+.answer-right{
+    color: green;
+}
+
+.answer-wrong{
+    color: red;
+}
